@@ -66,8 +66,6 @@ class ConfigScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             _buildSectionTitle("Apariencia"),
-
-            // 🔥 Nuevo: Botón para cambiar el tema
             ValueListenableBuilder<ThemeMode>(
               valueListenable: MyApp.themeNotifier,
               builder: (context, mode, _) {
